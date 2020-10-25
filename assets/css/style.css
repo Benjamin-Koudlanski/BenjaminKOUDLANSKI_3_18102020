@@ -1,0 +1,150 @@
+html, body
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+/* HEADER -------------------------------------------------------------*/
+
+header
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;  
+    box-shadow: 1px 1px 6px grey;
+}
+header img
+{
+    width: 175px;
+    height: 30px;
+    margin-bottom: -10px;
+    font-family: 'Shrikhand', cursive;
+}
+
+/* SECTION WELCOME -------------------------------------------------------------*/
+
+.welcome
+{
+    font-family: 'Roboto', sans-serif;
+}
+.city
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+.city i
+{
+    padding-top: 18px;
+}
+.city p
+{
+    padding-left: 10px;
+
+}
+.explore
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: rgb(250, 250, 250);
+}
+.explore h1
+{
+    text-align: center;
+    padding: 10px 40px 0 40px;
+    font-size: 1.6em;
+}
+.explore p
+{
+    text-align: center;
+    font-weight: lighter;
+    margin-top: -10px;
+    padding: 0 20px 10px 20px;
+    font-size: 1.2em;
+}
+.explore a
+{
+    text-decoration: none;
+}
+.explore_button
+{
+    width: 210px;
+    height: 20px;
+    margin: 0 70px 0 70px;
+    padding: 12px;
+    border-radius: 22px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, #FF79DA 2%, #9356DC  120%);
+}
+
+/* SECTION HOW_IS_WORK -------------------------------------------------------------*/
+
+.how_is_work
+{
+    font-family: "Roboto", sans-serif;
+    padding: 10px 15px 30px 30px;
+    background-color: white;
+}
+h2
+{
+    margin-left: -30px;
+    padding: 20px 0 0 20px;
+}
+.number_one, .number_two
+{
+    display: flex;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #dadada;
+}
+.number_one h3, .number_two h3, .number_three h3
+{
+    width: 25px;
+    height: 18px;
+    padding: 4px 0 2px 0;
+    margin-left: -14px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 15px;
+}
+.number_one i, .number_two i, .number_three i
+{
+    padding: 16px;
+    font-size: 20px;
+}
+.number_one p, .number_two p, .number_three p
+{
+    padding-left: 10px;
+}
+.number_three
+{
+    display: flex;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+    background-color: #f2d6ff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #dadada;
+}
+.number_three i
+{
+    color: #9356DC;
+}
+
+/* SECTION RESTAURANTS -------------------------------------------------------------*/
+
+.restaurants
+{
+    font-family: "Roboto", sans-serif;
+    padding: 10px 15px 30px 30px;
+    background-color: rgb(250, 250, 250);
+}
