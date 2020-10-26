@@ -20,7 +20,6 @@ header img
     width: 175px;
     height: 30px;
     margin-bottom: -10px;
-    font-family: 'Shrikhand', cursive;
 }
 
 /* SECTION WELCOME -------------------------------------------------------------*/
@@ -74,7 +73,7 @@ header img
 {
     width: 210px;
     height: 20px;
-    margin: 0 80px 0 80px;
+    margin: 0 80px 0 100px;
     padding: 12px;
     border-radius: 22px;
     text-align: center;
@@ -145,7 +144,7 @@ h2
 .restaurants
 {
     font-family: "Roboto", sans-serif;
-    padding: 10px 15px 30px 30px;
+    padding: 10px 0 30px 30px;
     background-color: rgb(248, 248, 248);
 }
 .restaurants_box
@@ -158,12 +157,12 @@ h2
 {
     display: flex;
     flex-direction: column;
-    width: 335px;
+    width: 370px;
     height: 300px;
 }
 .restaurants_cards img
 {
-    width: 335px;
+    width: 370px;
     height: 190px;
     margin: -16px 0 0 -40px;
     border-bottom: 80px solid white;
@@ -176,7 +175,7 @@ h2
     height: 1px;
     font-size: 0.9em;
     font-weight: bold;
-    margin: -275px 0 0 242px;
+    margin: -275px 0 0 277px;
     padding: 7px 7px 22px 12px;
     color: #30a15f;
     background-color: #99E2D0;
@@ -196,5 +195,51 @@ h2
 .heart
 {
     font-size: 25px;
-    margin: -50px 0 0 280px;
+    margin: -50px 0 0 325px;
+}
+
+/* FOOTER -------------------------------------------------------------*/
+
+footer
+{
+    width: auto;
+    height: auto;
+    background-color: rgb(45, 45, 45);
+    padding: 20px 20px 20px 0;
+    color: white;
+    display: flex;
+}
+.footer h1
+{
+    font-size: 1.2em;
+    margin-top: -2px;
+    padding: 0 10px 0 25px;
+    font-family: 'Shrikhand', cursive;
+}
+.footer ul
+{
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+}
+.footer li
+{
+    margin: 7px 0 7px -15px;
+}
+.footer li:nth-child(3), .footer li:nth-child(4)
+{
+    font-weight: lighter;
+}
+.footer a
+{
+    text-decoration: none;
+    color: white;
+}
+#forks, #deal
+{
+    padding-right: 8px;
+    font-weight: bold;
+}
+#deal
+{
+    margin-left: -6px;
 }
