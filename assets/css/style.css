@@ -380,3 +380,52 @@ footer
 {
     margin-left: -6px;
 }
+
+@media all and (min-width: 900px)
+{
+    .explore h1, .explore p, .explore_button
+    {
+        margin: auto;
+    }
+    .how_is_work h2
+    {
+        text-align: center;
+    }
+    .number_one, .number_two, .number_three
+    {
+        justify-content: center;
+    }
+    .restaurants
+    {
+        background-color: white;
+    }
+    .restaurants h2
+    {
+        text-align: center;
+    }
+    .restaurants_cards
+    {
+        margin: auto;
+    }
+    footer
+    {
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    .footer li:nth-child(1)
+    {
+        margin-left: -60px;
+    }
+    .footer li:nth-child(2)
+    {
+        margin-left: -45px;
+    }
+    .footer li:nth-child(3)
+    {
+        margin-left: -25px;
+    }
+    .footer li:nth-child(4)
+    {
+        padding-left: 25px;
+    }
+}
