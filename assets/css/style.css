@@ -5,6 +5,47 @@ html, body
     margin: auto;
 }
 
+/* LOADING SPINNER -------------------------------------------------------------*/
+
+.loading_spinner
+{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    transform: scale(0);
+    background-color: rgb(128, 128, 128, 0.5);
+    animation: load-background 4s 100ms backwards;
+}
+.spinner
+{
+        font-size: 8rem;
+        color: #9356DC;
+        margin: auto;
+        transform: scale(0);
+        animation: loading-spinner 4s 100ms linear backwards;
+}
+
+@keyframes loading-spinner{
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        transform: rotate(3turn);
+        opacity: 0;
+    }
+}
+
+@keyframes load-background{
+    0%,100% {
+        transform: scale(1);
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
 /* HEADER -------------------------------------------------------------*/
 
 header
@@ -263,6 +304,34 @@ h2
     width: 40px;
     margin-top: -15px;
 }
+.starters
+{
+    animation: card-title 1000ms ease-in-out;
+}
+.dishes
+{
+    animation: card-title 1000ms 400ms ease-in-out backwards;
+}
+.desserts
+{
+    animation: card-title 1000ms 800ms ease-in-out backwards;
+}
+.starters, .dishes, .desserts
+{
+    padding-top: 5px;
+}
+.starters_cards
+{
+    animation: card-title 1000ms 200ms ease-in-out backwards;
+}
+.dishes_cards
+{
+    animation: card-title 1000ms 600ms ease-in-out backwards;
+}
+.desserts_cards
+{
+    animation: card-title 1000ms 900ms ease-in-out backwards;
+}
 .starters_cards, .dishes_cards, .desserts_cards
 {
     display: flex;
@@ -285,11 +354,6 @@ h2
     font-size: 0.9em;
     font-weight: lighter;
 }
-.starters p, .dishes p, .desserts p
-{
-    padding-left: 310px;
-    margin-top: -21px;
-}
 .dishes_cards_bigger
 {
     display: flex;
@@ -308,6 +372,27 @@ h2
 .dishes_cards_bigger h5
 {
     padding-right: 100px;
+}
+.price
+{
+    padding-left: 310px;
+    margin-top: -45px;
+}
+
+/* FADEIN EFFECT MENU ------------------------------------------------------------------*/
+
+@keyframes card-title 
+{
+    0%{
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100%{
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
 }
 
 /* ORDER BUTTON MENU PAGES -------------------------------------------------------------*/
