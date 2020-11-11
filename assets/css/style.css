@@ -135,6 +135,12 @@ header img
     text-align: center;
     color: white;
     background: linear-gradient(to bottom, #FF79DA 2%, #9356DC  120%);
+    transition: 400ms;
+}
+.explore_button:hover
+{
+    filter: brightness(115%);
+    box-shadow: 1px 1px 5px grey;
 }
 
 /* SECTION HOW_IS_WORK -------------------------------------------------------------*/
@@ -286,6 +292,14 @@ h2
     margin: -55px 0 0 340px;
     font-size: 25px;
 }
+.restaurants_cards i
+{
+    transition: 1200ms;   
+}
+.restaurants_cards i:hover
+{
+    color: #9356DC;
+}
 
 /* STARTERS, DISHES, DESSERTS -------------------------------------------------------------*/
 
@@ -378,7 +392,6 @@ h2
     padding-left: 310px;
     margin-top: -45px;
 }
-
 /* FADEIN EFFECT MENU ------------------------------------------------------------------*/
 
 @keyframes card-title 
@@ -394,6 +407,8 @@ h2
       opacity: 1;
     }
 }
+
+/* SLIDE EFFECT MENU ------------------------------------------------------------------*/
 
 /* ORDER BUTTON MENU PAGES -------------------------------------------------------------*/
 
@@ -413,6 +428,12 @@ aside
     text-align: center;
     color: white;
     background: linear-gradient(to bottom, #FF79DA 2%, #9356DC  120%);
+    transition: 400ms;
+}
+.order_button:hover
+{
+    filter: brightness(115%);
+    box-shadow: 1px 1px 5px grey;
 }
 .order_button h5
 {
