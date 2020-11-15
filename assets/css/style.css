@@ -292,17 +292,21 @@ h2
     margin: -55px 0 0 340px;
     font-size: 25px;
 }
-.restaurants_cards i
+.restaurants_cards i, .menu i
 {
     transition: 1200ms;   
 }
-.restaurants_cards i:hover
+.restaurants_cards i:hover, .menu i:hover
 {
     color: #9356DC;
 }
 
 /* STARTERS, DISHES, DESSERTS -------------------------------------------------------------*/
 
+.menu
+{
+    padding: 0 0 30px 10px;
+}
 .menu_cards
 {
     font-family: "Roboto", sans-serif;
@@ -332,65 +336,78 @@ h2
 }
 .starters, .dishes, .desserts
 {
-    padding-top: 5px;
+    padding-top: 30px;
 }
-.starters_cards
+.starters_meal, .dishes_meal, .desserts_meal
 {
-    animation: card-title 1000ms 200ms ease-in-out backwards;
-}
-.dishes_cards
-{
-    animation: card-title 1000ms 600ms ease-in-out backwards;
-}
-.desserts_cards
-{
-    animation: card-title 1000ms 900ms ease-in-out backwards;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
 }
 .starters_cards, .dishes_cards, .desserts_cards
 {
+    width: 380px;
+    height: 70px;
     display: flex;
-    flex-direction: column;
-    width: 360px;
-    height: 60px;
+    justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     background-color: white;
     border-radius: 18px;
     box-shadow: 4px 4px 16px #c4c0c0;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0 -12px;
+    cursor: pointer;
 }
-.starters h4, .dishes h4, .desserts h4
+.starters_names, .dishes_names, .desserts_names
 {
-    padding: 0 0 0 15px;
-    margin-top: 13px;
+    margin: 15px 0 0 15px;
+    padding-bottom: 8px;
+    font-size: 1.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.starters h5, .dishes h5, .desserts h5
+.starters_side_dish, .dishes_side_dish, .desserts_side_dish
 {
-    margin: -18px 0 0 15px;
-    font-size: 0.9em;
+    margin: 15px 0 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font-weight: lighter;
-}
-.dishes_cards_bigger
-{
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-    height: 80px;
-    background-color: white;
-    border-radius: 18px;
-    box-shadow: 4px 4px 16px #c4c0c0;
-    margin: 20px 0 20px 0;
-}
-.dishes_cards_bigger h4
-{
-    padding-right: 100px;
-}
-.dishes_cards_bigger h5
-{
-    padding-right: 100px;
 }
 .price
 {
-    padding-left: 310px;
-    margin-top: -45px;
+    padding: 25px 15px 0 15px;
+    font-weight: bold;
+}
+.check_icon
+{
+    width: 0;
+    padding-top: 25px;
+    background-color: #99E2D0;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    transition: width 500ms;
+}
+.check
+{
+    margin: auto;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    transform: rotate(-360deg);
+    transition: transform 500ms;
+}
+.starters_cards:hover .check_icon, .dishes_cards:hover .check_icon, .desserts_cards:hover .check_icon
+{
+    width: 70px;
+}
+.starters_cards:hover .check_icon > .check, .dishes_cards:hover .check_icon > .check, .desserts_cards:hover .check_icon > .check_icon
+{
+    transform: rotate(0deg)
 }
 /* FADEIN EFFECT MENU ------------------------------------------------------------------*/
 
@@ -407,8 +424,6 @@ h2
       opacity: 1;
     }
 }
-
-/* SLIDE EFFECT MENU ------------------------------------------------------------------*/
 
 /* ORDER BUTTON MENU PAGES -------------------------------------------------------------*/
 
@@ -487,6 +502,8 @@ footer
     margin-left: -6px;
 }
 
+/* MEDIA QUERIES -------------------------------------------------------------*/
+
 @media all and (min-width: 900px)
 {
     .explore h1, .explore p, .explore_button
@@ -512,6 +529,14 @@ footer
     .restaurants_cards
     {
         margin: auto;
+    }
+    .starters_cards:active .check_icon, .dishes_cards:active .check_icon, .desserts_cards:active .check_icon
+    {
+    width: 70px;
+    }
+    .starters_cards:active .check_icon > .check, .dishes_cards:active .check_icon > .check, .desserts_cards:active .check_icon > .check_icon
+    {
+    transform: rotate(0deg)
     }
     footer
     {
