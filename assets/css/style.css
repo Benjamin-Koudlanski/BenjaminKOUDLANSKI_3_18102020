@@ -18,11 +18,11 @@ html, body
 }
 .spinner
 {
-        font-size: 8rem;
-        color: #9356DC;
-        margin: auto;
-        transform: scale(0);
-        animation: loading-spinner 4s 100ms linear backwards;
+    font-size: 8rem;
+    color: #9356DC;
+    margin: auto;
+    transform: scale(0);
+    animation: loading-spinner 4s 100ms linear backwards;
 }
 
 @keyframes loading-spinner{
@@ -54,7 +54,8 @@ header
     height: auto;
     display: flex;
     justify-content: center;  
-    box-shadow: 1px 1px 6px grey;
+    position: relative;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
 }
 header img
 {
@@ -196,6 +197,12 @@ h2
     border-radius: 20px;
     box-shadow: 1px 1px 10px #dadada;
 }
+.number_one:hover, .number_two:hover, .number_three:hover
+{
+    filter: brightness(98%);
+    box-shadow: 1px 1px 5px grey;
+    transition: 2500ms;
+}
 .number_three i
 {
     color: #9356DC;
@@ -258,6 +265,7 @@ h2
 {
     font-size: 25px;
     margin: -50px 0 0 325px;
+    cursor: pointer;
 }
 
 /* SECTION MENU -------------------------------------------------------------*/
@@ -291,6 +299,7 @@ h2
 {
     margin: -55px 0 0 340px;
     font-size: 25px;
+    cursor: pointer;
 }
 .restaurants_cards i, .menu i
 {
@@ -405,10 +414,11 @@ h2
 {
     width: 70px;
 }
-.starters_cards:hover .check_icon > .check, .dishes_cards:hover .check_icon > .check, .desserts_cards:hover .check_icon > .check_icon
+.starters_cards:hover .check_icon > .check, .dishes_cards:hover .check_icon > .check, .desserts_cards:hover .check_icon > .check
 {
     transform: rotate(0deg)
 }
+
 /* FADEIN EFFECT MENU ------------------------------------------------------------------*/
 
 @keyframes card-title 
@@ -442,6 +452,7 @@ aside
     border-radius: 22px;
     text-align: center;
     color: white;
+    cursor: pointer;
     background: linear-gradient(to bottom, #FF79DA 2%, #9356DC  120%);
     transition: 400ms;
 }
@@ -506,42 +517,82 @@ footer
 
 @media all and (min-width: 900px)
 {
+    /* INDEX ----------------------------------------------------------------*/
+
     .explore h1, .explore p, .explore_button
     {
         margin: auto;
     }
+    .explore p
+    {
+        padding-bottom: 30px;
+    }
     .how_is_work h2
     {
         text-align: center;
+        font-size: 1.7em;
     }
     .number_one, .number_two, .number_three
     {
         justify-content: center;
+        margin: 30px 190px 0 190px;
     }
     .restaurants
     {
         background-color: white;
     }
-    .restaurants h2
+    .categories_title
     {
+        font-size: 1.9em;
         text-align: center;
+        padding-right: 15px;
     }
     .restaurants_cards
     {
         margin: auto;
+        padding: 80px 0 150px 55px;
+        justify-content: center;
+        align-items: center;
+    }
+    .restaurants_cards img
+    {
+        width: 670px;
+        height: 400px;
+    }
+    .restaurants_cards h2
+    {
+        margin: -460px 50px 0 460px;
+        padding-right: 22px;
+        padding-bottom: 25px;
+        font-size: 1.1em;
+    }
+    .restaurants_cards h4
+    {
+        margin: 205px 0 10px -500px;
+        font-size: 1.3em;
+    }
+    .restaurants_cards p
+    {
+        margin: 3px 0 10px -550px;
+    }
+    .heart
+    {
+        font-size: 35px;
+        margin: -65px 0 0 500px;
     }
     .starters_cards:active .check_icon, .dishes_cards:active .check_icon, .desserts_cards:active .check_icon
     {
-    width: 70px;
+        width: 70px;
     }
-    .starters_cards:active .check_icon > .check, .dishes_cards:active .check_icon > .check, .desserts_cards:active .check_icon > .check_icon
+    .starters_cards:active .check_icon > .check, .dishes_cards:active .check_icon > .check, .desserts_cards:active .check_icon > .check
     {
-    transform: rotate(0deg)
+        transform: rotate(0deg)
     }
     footer
     {
         justify-content: center;
         font-size: 1.2em;
+        padding-left: 60px;
     }
     .footer li:nth-child(1)
     {
@@ -558,5 +609,35 @@ footer
     .footer li:nth-child(4)
     {
         padding-left: 25px;
+    }
+
+    /* MENU PAGES ----------------------------------------------------------------*/
+
+    .container
+    {
+        background-color: rgb(248, 248, 248);
+    }
+    .restaurant_image img
+    {
+        width: 513px;
+        height: 385px;
+        border-bottom-right-radius: 30px;
+    }
+    .menu
+    {
+        margin-top: 40px;
+    }
+    .menu h2
+    {
+        margin: -350px 0 0 500px;
+        font-size: 2em;
+    }
+    .heart_menu
+    {
+        margin: -35px 0 0 1070px;
+    }
+    .menu_cards
+    {
+        padding-top: 270px;
     }
 }
