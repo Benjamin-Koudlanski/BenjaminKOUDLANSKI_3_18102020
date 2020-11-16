@@ -228,6 +228,7 @@ h2
     flex-direction: column;
     width: 370px;
     height: 300px;
+    transition: 1s ease-out;
 }
 .restaurants_cards img
 {
@@ -553,7 +554,15 @@ footer
         padding: 80px 0 150px 55px;
         justify-content: center;
         align-items: center;
+        transition: 1s ease-out;
     }
+    .restaurants_cards:hover
+{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease-in;
+}
     .restaurants_cards img
     {
         width: 670px;
