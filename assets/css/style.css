@@ -165,6 +165,7 @@ h2
     background-color: rgb(248, 248, 248);
     border-radius: 20px;
     box-shadow: 1px 1px 10px #dadada;
+    cursor: pointer;
 }
 .number_one h3, .number_two h3, .number_three h3
 {
@@ -196,6 +197,7 @@ h2
     background-color: #f2d6ff;
     border-radius: 20px;
     box-shadow: 1px 1px 10px #dadada;
+    cursor: pointer;
 }
 .number_one:hover, .number_two:hover, .number_three:hover
 {
@@ -516,7 +518,181 @@ footer
 
 /* MEDIA QUERIES -------------------------------------------------------------*/
 
-@media all and (min-width: 900px)
+@media only screen and (min-width: 300px) and (max-width: 900px)
+{
+    /* LOADING SPINNER ------------------------------------------------------*/
+
+    @keyframes load-background{
+        0%,100% {
+            transform: scale(1);
+            width: 122vw;
+            height: 150vh;
+        }
+    }
+    
+    /* INDEX ----------------------------------------------------------------*/
+
+    html, body, header
+    {
+        width: 390px;
+    }
+    .city p
+    {
+        text-align: center;
+    }
+    .explore_button
+    {
+        margin: auto;
+    }
+    .restaurants_cards
+    {
+        margin-left: -9px;
+    }
+
+    /* MENU PAGES ----------------------------------------------------------------*/
+
+    .menu_pages, .menu_header
+    {
+        width: 411px;
+    }
+    .menu
+    {
+        width: 404px;
+    }
+    aside
+    {
+        width: 415px;
+        margin: auto;
+    }
+    footer
+    {
+        width: 395px;
+    }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 830px)
+{
+    /* LOADING SPINNER ------------------------------------------------------*/
+
+    @keyframes load-background{
+        0%,100% {
+            transform: scale(1);
+            width: 100vw;
+            height: 150vh;
+        }
+    }
+
+    /* INDEX ----------------------------------------------------------------*/
+
+    html, body, header
+    {
+        width: 414px;
+    }
+    .restaurants_cards
+    {
+        margin-left: 2px;
+    }
+
+    /* MENU PAGES ----------------------------------------------------------------*/
+
+    .menu_pages, .menu_header
+    {
+        width: 412px;
+    }
+    .menu
+    {
+        width: 405px;
+    }
+    aside
+    {
+        width: 415px;
+        margin: auto;
+    }
+    footer
+    {
+        width: 395px;
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 720px)
+{
+    /* LOADING SPINNER ------------------------------------------------------*/
+
+    @keyframes load-background{
+        0%,100% {
+            transform: scale(1);
+            width: 100vw;
+            height: 150vh;
+        }
+    }
+
+    /* INDEX ----------------------------------------------------------------*/
+
+    html, body, header
+    {
+        width: 540px;
+    }
+    .categories_title
+    {
+        text-align: center;
+    }
+    .restaurants_cards
+    {
+        margin-left: 75px;
+    }
+    
+    /* MENU PAGES ----------------------------------------------------------------*/
+
+    .menu_pages, .menu_header
+    {
+        width: 540px;
+    }
+    .restaurant_image img
+    {
+        width: 539px;
+        height: 331px;
+    }
+    .arrow_return
+    {
+        margin-left: -100px;
+    }
+    .logo
+    {
+        margin-left: 60px;
+    }
+    .menu
+    {
+        width: 529px;
+    }
+    .menu h2
+    {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    .heart_menu
+    {
+       padding-left: 90px; 
+    }
+    .starters_cards, .dishes_cards, .desserts_cards
+    {
+        width: 505px;
+    }
+    aside
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 540px;
+    }
+    .order_button
+    {
+        margin: auto;
+    }
+    footer
+    {
+        width: 520px;
+    }
+
+}
+@media only screen and (min-width: 900px)
 {
     /* INDEX ----------------------------------------------------------------*/
 
@@ -589,14 +765,6 @@ footer
         font-size: 35px;
         margin: -65px 0 0 500px;
     }
-    .starters_cards:active .check_icon, .dishes_cards:active .check_icon, .desserts_cards:active .check_icon
-    {
-        width: 70px;
-    }
-    .starters_cards:active .check_icon > .check, .dishes_cards:active .check_icon > .check, .desserts_cards:active .check_icon > .check
-    {
-        transform: rotate(0deg)
-    }
     footer
     {
         justify-content: center;
@@ -651,7 +819,16 @@ footer
         padding-top: 270px;
     }
     .restaurants_cards i:hover, .menu i:hover
-{
+    {
     color: #9356DC;
-}
+    }
+    .starters_cards:active .check_icon, .dishes_cards:active .check_icon, .desserts_cards:active .check_icon
+    {
+        width: 70px;
+    }
+    .starters_cards:active .check_icon > .check, .dishes_cards:active .check_icon > .check, .desserts_cards:active .check_icon > .check
+    {
+        transform: rotate(0deg)
+    }
+
 }
