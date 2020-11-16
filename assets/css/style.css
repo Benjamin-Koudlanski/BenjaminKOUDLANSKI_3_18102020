@@ -306,7 +306,7 @@ h2
 {
     transition: 1200ms;   
 }
-.restaurants_cards i:hover, .menu i:hover
+.restaurants_cards i:active, .menu i:active
 {
     color: #9356DC;
 }
@@ -650,4 +650,8 @@ footer
     {
         padding-top: 270px;
     }
+    .restaurants_cards i:hover, .menu i:hover
+{
+    color: #9356DC;
+}
 }
