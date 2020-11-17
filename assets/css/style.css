@@ -241,7 +241,7 @@ h2
     border-radius: 18px;
     box-shadow: 5px 5px 21px #c4c0c0;
 }
-.restaurants_cards h2
+.restaurants_cards span
 {
     width: 60px;
     height: 1px;
@@ -555,18 +555,36 @@ footer
     {
         margin: auto;
     }
+    .categories_title
+    {
+        font-size: 1.5em;
+        margin-left: -10px;
+    }
     .restaurants_cards
     {
+        margin-bottom: -90px;
+        margin-top: 10px;
         margin-left: 5px;
         width: auto;
     }
     .restaurants_cards img
     {
         width: 270px;
+        height: auto;
+        border-bottom: 55px solid white;
     }
-    .restaurants_cards h2
+    .restaurants_cards span
     {
-        margin: -270px 0 0 170px;
+        margin: -200px 0 0 180px;
+    }
+    .restaurants_cards h4
+    {
+        margin-top: -32px;
+        margin-bottom: -20px;
+    }
+    .restaurants_cards p
+    {
+        margin-top: 20px;
     }
     .heart
     {
@@ -634,6 +652,7 @@ footer
 
     .restaurants_cards
     {
+        margin-bottom: -70px;
         margin-left: 5px;
         width: auto;
     }
@@ -641,13 +660,22 @@ footer
     {
         width: 310px;
     }
-    .restaurants_cards h2
+    .restaurants_cards span
     {
-        margin: -270px 0 0 210px;
+        margin: -220px 0 0 220px;
+    }
+    .restaurants_cards h4
+    {
+        margin-top: -15px;
+        margin-bottom: -20px;
+    }
+    .restaurants_cards p
+    {
+        margin-top: 20px;
     }
     .heart
     {
-        margin: -40px 0 0 260px;
+        margin: -40px 0 0 255px;
     }
 
     /* MENU PAGES ----------------------------------------------------------------*/
@@ -677,9 +705,18 @@ footer
     {
         width: 320px;
     }
-    .restaurants_cards h2
+    .restaurants_cards span
     {
-        margin: -270px 0 0 220px;
+        margin: -215px 0 0 220px;
+    }
+    .restaurants_cards h4
+    {
+        margin-top: -15px;
+        margin-bottom: -20px;
+    }
+    .restaurants_cards p
+    {
+        margin-top: 20px;
     }
     .heart
     {
@@ -720,19 +757,32 @@ footer
     {
         font-size: 0.9em;
     }
+    .number_one h3, .number_two h3, .number_three h3
+    {
+        padding: 4px 2px 6px 2px;
+    }
+    .number_one i, .number_two i, .number_three i
+    {
+        margin-top: 5px;
+    }
+    .restaurants_cards
+    {
+        margin-bottom: -25px;
+    }
     .restaurants_cards img
     {
         width: 360px;
+        border-bottom: 70px solid white;
     }
-    .restaurants_cards h2
+    .restaurants_cards span
     {
-        margin: -270px 0 0 250px;
+        margin: -260px 0 0 250px;
         padding-right: 20px;
         padding-bottom: 24px;
     }
     .restaurants_cards h4
     {
-        margin-top: 10px;
+        margin-top: 8px;
     }
     .heart
     {
@@ -782,9 +832,6 @@ footer
     .how_is_work h2, .categories_title
     {
         font-size: 1.7em;
-    }
-    .categories_title
-    {
         text-align: center;
     }
     .restaurants
@@ -805,7 +852,7 @@ footer
         width: 470px;
         height: auto;
     }
-    .restaurants_cards h2
+    .restaurants_cards span
     {
         margin: -320px 0 0 350px;
         padding-right: 20px;
@@ -813,11 +860,11 @@ footer
     }
     .restaurants_cards h4
     {
-        margin-top: 55px;
+        margin-top: 65px;
     }
     .heart
     {
-        margin: -50px 0 0 410px;
+        margin: -45px 0 0 410px;
     }
     
     /* MENU PAGES ----------------------------------------------------------------*/
@@ -886,9 +933,7 @@ footer
     }
     .restaurants_cards
     {
-        justify-content: center;
-        align-items: center;
-        margin: 110px 0 110px 0;
+        margin: 10px 0 180px 0;
         transition: 1s ease-out;
     }
     .restaurants_cards:hover
@@ -901,10 +946,9 @@ footer
     .restaurants_cards img
     {
         width: 670px;
-        height: auto;
         border-bottom: 100px solid white;
     }
-    .restaurants_cards h2
+    .restaurants_cards span
     {
         margin: -450px 50px 0 510px;
         padding-right: 34px;
@@ -913,18 +957,25 @@ footer
     }
     .restaurants_cards h4
     {
-        margin: 170px 0 10px -490px;
+        margin: 165px 0 10px 0;
         font-size: 1.3em;
     }
     .restaurants_cards p
     {
-        margin: 3px 0 10px -550px;
+        margin-top: 5px;
     }
     .heart
     {
         font-size: 35px;
-        margin: -65px 0 0 500px;
+        margin: -55px 0 0 590px;
     }
+    .restaurants_cards i:hover, .menu i:hover
+    {
+    color: #9356DC;
+    }
+
+    /* FOOTER INDEX + MENU PAGES ----------------------------------------------------------------*/
+
     footer
     {
         justify-content: center;
