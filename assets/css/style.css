@@ -518,14 +518,14 @@ footer
 
 /* MEDIA QUERIES -------------------------------------------------------------*/
 
-@media only screen and (min-width: 300px) and (max-width: 900px)
+@media only screen and (min-width: 300px)
 {
     /* LOADING SPINNER ------------------------------------------------------*/
 
     @keyframes load-background{
         0%,100% {
             transform: scale(1);
-            width: 122vw;
+            width: 133vw;
             height: 150vh;
         }
     }
@@ -534,7 +534,7 @@ footer
 
     html, body, header
     {
-        width: 390px;
+        width: 420px;
     }
     .city p
     {
@@ -546,81 +546,38 @@ footer
     }
     .restaurants_cards
     {
-        margin-left: -9px;
+        margin-left: 5px;
     }
 
     /* MENU PAGES ----------------------------------------------------------------*/
 
     .menu_pages, .menu_header
     {
-        width: 411px;
+        width: 420px;
     }
     .menu
     {
-        width: 404px;
+        width: 409px;
+    }
+    .restaurant_image img
+    {
+        width: 420px;
     }
     aside
     {
-        width: 415px;
+        width: 417px;
         margin: auto;
-    }
-    footer
-    {
-        width: 395px;
     }
 }
 
-@media only screen and (min-width: 411px) and (max-width: 830px)
+@media only screen and (min-width: 420px)
 {
     /* LOADING SPINNER ------------------------------------------------------*/
 
     @keyframes load-background{
         0%,100% {
             transform: scale(1);
-            width: 100vw;
-            height: 150vh;
-        }
-    }
-
-    /* INDEX ----------------------------------------------------------------*/
-
-    html, body, header
-    {
-        width: 414px;
-    }
-    .restaurants_cards
-    {
-        margin-left: 2px;
-    }
-
-    /* MENU PAGES ----------------------------------------------------------------*/
-
-    .menu_pages, .menu_header
-    {
-        width: 412px;
-    }
-    .menu
-    {
-        width: 405px;
-    }
-    aside
-    {
-        width: 415px;
-        margin: auto;
-    }
-    footer
-    {
-        width: 395px;
-    }
-}
-@media only screen and (min-width: 540px) and (max-width: 720px)
-{
-    /* LOADING SPINNER ------------------------------------------------------*/
-
-    @keyframes load-background{
-        0%,100% {
-            transform: scale(1);
-            width: 100vw;
+            width: 130vw;
             height: 150vh;
         }
     }
@@ -635,9 +592,66 @@ footer
     {
         text-align: center;
     }
-    .restaurants_cards
+    .restaurants_box
     {
-        margin-left: 75px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* MENU PAGES ----------------------------------------------------------------*/
+
+    .menu_pages, .menu_header
+    {
+        width: 540px;
+    }
+    .restaurant_image img
+    {
+        width: 540px;
+    }
+    .menu
+    {
+        width: 530px;
+        height: 1180px;
+    }
+    .starters_cards, .dishes_cards, .desserts_cards
+    {
+        width: 500px;
+    }
+    aside
+    {
+        width: 540px;
+    }
+}
+@media only screen and (min-width: 540px)
+{
+    /* LOADING SPINNER ------------------------------------------------------*/
+
+    @keyframes load-background{
+        0%,100% {
+            transform: scale(1);
+            width: 120vw;
+            height: 150vh;
+        }
+    }
+
+    /* INDEX ----------------------------------------------------------------*/
+
+    html, body, header
+    {
+        width: 625px;
+    }
+    header img
+    {
+        padding-right: 50px;
+    }
+    .categories_title
+    {
+        text-align: center;
+    }
+    .restaurants_box
+    {
+        justify-content: center;
+        align-items: center;
     }
     
     /* MENU PAGES ----------------------------------------------------------------*/
@@ -678,8 +692,6 @@ footer
     }
     aside
     {
-        padding-top: 50px;
-        padding-bottom: 50px;
         width: 540px;
     }
     .order_button
@@ -696,6 +708,10 @@ footer
 {
     /* INDEX ----------------------------------------------------------------*/
 
+    html, body, header, footer
+    {
+        width: auto;
+    }
     .explore h1, .explore p, .explore_button
     {
         margin: auto;
@@ -724,12 +740,16 @@ footer
         text-align: center;
         padding-right: 15px;
     }
-    .restaurants_cards
+    .restaurants_box
     {
-        margin: auto;
-        padding: 80px 0 150px 55px;
         justify-content: center;
         align-items: center;
+    }
+    .restaurants_cards
+    {
+        justify-content: center;
+        align-items: center;
+        margin: 110px 0 110px 0;
         transition: 1s ease-out;
     }
     .restaurants_cards:hover
